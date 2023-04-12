@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blog_adrian']
+ALLOWED_HOSTS = ['blog_adrian.herokuapp.com', 'localhost' ]
 
 
 # Application definition
@@ -138,5 +138,5 @@ STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_URL = '/media'
+MEDIA_URL = '/media/'
 Default_File_Storage = 'cloudinary_storage.storage.MediaCloudinaryStorage'
